@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Landing</name>
+    </assembly>
+    <members>
+        <member name="M:Flite.Landing.Controllers.Api.Extensions.DeserializeJson``1(System.String)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+        <member name="M:Flite.Landing.Controllers.Api.Extensions.DeserializeJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="settings">The settings.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+    </members>
+</doc>

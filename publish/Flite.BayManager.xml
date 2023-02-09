@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.BayManager</name>
+    </assembly>
+    <members>
+        <member name="M:Flite.BayManager.Controllers.Api.Extensions.DeserializeJson``1(System.String)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+        <member name="M:Flite.BayManager.Controllers.Api.Extensions.DeserializeJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="settings">The settings.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+        <member name="M:Flite.BayManager.Controllers.BayController.SendNewBaySMS(System.String,System.String)">
+            <summary>
+            Send a new bay sms. Of note, this will be refactored to use provider enums and event enums.
+            </summary>
+            <param name="playerId">The player id.</param>
+            <param name="bay_id">The bay id.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="T:Flite.BayManager.Hubs.IBayManagerHub">
+            <summary>
+            Bay Manager Hub.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Hubs.IBayManagerHub.ReceiveMessageAsync(System.String)">
+            <summary>
+            Received Message.
+            </summary>
+        </member>
+        <member name="T:Flite.BayManager.Services.IAlohaService">
+            <summary>
+            Aloha Service.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.IAlohaService.GetTableCheckId(System.String)">
+            <summary>
+            GetTableCheckId.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.IAlohaService.CreateTable(Flite.BayManager.Models.BayTableCheckDto)">
+            <summary>
+            Create Table.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.IAlohaService.AddItem(Flite.BayManager.Models.BayTableCheckItemRequestDto)">
+            <summary>
+            AddItem.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.IAlohaService.GetBasePath">
+            <summary>
+            GetBasePath.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.IBayService.SaveReservationAsync(Flite.BayManager.Models.ReservationNewDto)">
+            <summary>
+            Save reservations.
+            </summary>
+        </member>
+        <member name="T:Flite.BayManager.Services.ITwilioService">
+            <summary>
+            Twilio Service.
+            </summary>
+        </member>
+        <member name="M:Flite.BayManager.Services.ITwilioService.SendMessage(System.String,System.String)">
+            <summary>
+            Send Message.
+            </summary>
+        </member>
+    </members>
+</doc>

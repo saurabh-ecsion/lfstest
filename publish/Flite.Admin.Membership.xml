@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Admin.Membership</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Admin.Membership.Services.IMembershipService">
+            <summary>
+            Membership Service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetAsync">
+            <summary>
+            Return list of membership.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetAsync(System.Int32)">
+            <summary>
+            Return membership.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.SaveAsync(Flite.Admin.Membership.Models.MembershipViewModel)">
+            <summary>
+            Save membership.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetTypesAsync">
+            <summary>
+            Return list of membership type.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetTypeAsync(System.Int32)">
+            <summary>
+            Return membership type.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.SaveTypeAsync(Flite.Admin.Membership.Models.MembershipTypeDto)">
+            <summary>
+            Save membership type.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetBenefitsAsync">
+            <summary>
+            Return list of Benefit.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.GetBenefitAsync(System.Int32)">
+            <summary>
+            Return Benefit.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.Membership.Services.IMembershipService.SaveBenefitAsync(Flite.Admin.Membership.Models.MembershipBenefitDto)">
+            <summary>
+            Save Benefit.
+            </summary>
+        </member>
+    </members>
+</doc>

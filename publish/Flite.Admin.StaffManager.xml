@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Admin.StaffManager</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Admin.StaffManager.Services.IEmployeeService">
+            <summary>
+            Employee Service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.GetEmployeesAsync">
+            <summary>
+            Return all employees list.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.GetEmployeeAsync(System.Guid)">
+            <summary>
+            Return an employee.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.SaveEmployeeAsync(Flite.Admin.StaffManager.Models.EmployeeDto)">
+            <summary>
+            create or update an employee.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.DeleteEmployeeAsync(System.Guid)">
+            <summary>
+            Delete an employee.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.GetAuthenticationAsync(System.Guid)">
+            <summary>
+            Return employee authentication.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.CreateAuthenticationAsync(System.Guid,Flite.Admin.StaffManager.Models.EmployeeAuthenticationDto)">
+            <summary>
+            Create employee authentication.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.StaffManager.Services.IEmployeeService.UpdateAuthenticationAsync(System.Guid,Flite.Admin.StaffManager.Models.EmployeeAuthenticationDto)">
+            <summary>
+            Update employee authentication.
+            </summary>
+        </member>
+    </members>
+</doc>

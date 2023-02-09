@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Admin.Sms</name>
+    </assembly>
+    <members>
+        <member name="M:Flite.Admin.Sms.Services.SmsService.SendSMSMessageAsync(System.String,System.String,Flite.Admin.Sms.Services.SmsService.SmsEvents)">
+            <summary>
+            Holder for better SMS messaging.
+            </summary>
+            <param name="playerId">Player Id.</param>
+            <param name="bayId">Bay Id.</param>
+            <param name="smsEvent">sms Event.</param>
+            <returns>Task Bool.</returns>
+        </member>
+        <member name="M:Flite.Admin.Sms.Services.SmsService.SendSMSMessageAsync(FliteGolf.Modules.SMS.Core.DTO.VenueSMSPlayerMessageDto)">
+            <summary>
+            Send or resend a message.
+            </summary>
+            <param name="venueSMSPlayerMessageDto">message dto object.</param>
+            <returns>task bool.</returns>
+        </member>
+    </members>
+</doc>

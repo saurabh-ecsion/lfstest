@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.HttpClient</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.HttpClient.IFliteAuthenticationApi">
+            <summary>
+            Methods representing the Authentication endpoints of the Flite Gateway API.
+            </summary>
+        </member>
+        <member name="M:Flite.HttpClient.IFliteAuthenticationApi.GetTokenAsync(Flite.HttpClient.Models.AuthTokenRequest)">
+            <summary>
+            End point used to retrieve an authentication and refresh token using a client and secret key.
+            </summary>
+            <param name="credentials">The client and secret key combination.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Flite.HttpClient.IFliteAuthenticationApi.GetRefreshedTokenAsync(Flite.HttpClient.Models.AuthRefreshTokenRequest)">
+            <summary>
+            End point used to retrieve an authentication token using an existing refresh token.
+            </summary>
+            <param name="credentials">The refresh token provided.</param>
+            <returns>
+            <para>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</para>
+            </returns>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.GetTokenAsync(Flite.HttpClient.Models.AuthTokenRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.GetRefreshedTokenAsync(Flite.HttpClient.Models.AuthRefreshTokenRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.Flite#HttpClient#IFliteAuthenticationApi#GetTokenAsync(Flite.HttpClient.Models.AuthTokenRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteHttpClientIFliteAuthenticationApi.Flite#HttpClient#IFliteAuthenticationApi#GetRefreshedTokenAsync(Flite.HttpClient.Models.AuthRefreshTokenRequest)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Authentication.Settings.PutObjectRequest">
+            <summary>
+            When putting complex objects - the API wants this model for some calls.
+            </summary>
+        </member>
+    </members>
+</doc>

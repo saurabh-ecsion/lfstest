@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Admin.OperatingHours</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Admin.OperatingHours.Services.IOperatingDayService">
+            <summary>
+            Operating Day Service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingDayService.GetAsync">
+            <summary>
+            Return list of operating days.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingDayService.SaveAsync(Flite.Admin.OperatingHours.Models.OperatingScheduleViewModel)">
+            <summary>
+            Save schedule.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingDayService.GetOperatingSchedulesAsync">
+            <summary>
+            Return list operating schedules.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingDayService.GetOperatingScheduleAsync(System.String)">
+            <summary>
+            Return operating schedule.
+            </summary>
+        </member>
+        <member name="T:Flite.Admin.OperatingHours.Services.IOperatingHoursService">
+            <summary>
+            Operating Hours Service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingHoursService.SaveAsync(Flite.Admin.OperatingHours.Models.OperatingHoursDto)">
+            <summary>
+            Save hour.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingHoursService.GetAsync">
+            <summary>
+            Get all operating hours.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IOperatingHoursService.GetAsync(System.Int32)">
+            <summary>
+            Get operating hours.
+            </summary>
+        </member>
+        <member name="T:Flite.Admin.OperatingHours.Services.IPriceListService">
+            <summary>
+            Operating Hours Service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IPriceListService.SaveAsync(Flite.Admin.OperatingHours.Models.PriceListDto)">
+            <summary>
+            Save Price List.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IPriceListService.GetAsync">
+            <summary>
+            Get all Price List.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.OperatingHours.Services.IPriceListService.GetAsync(System.Int32)">
+            <summary>
+            Get Price List.
+            </summary>
+        </member>
+    </members>
+</doc>

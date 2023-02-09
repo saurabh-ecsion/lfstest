@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Reservations</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Reservations.Api.IFliteReservations">
+            <summary>
+            Interface for the Flite reservations.
+            </summary>
+        </member>
+        <member name="M:Flite.Reservations.Api.IFliteReservations.GetReservationsAsync(System.String)">
+            <summary>
+            Get the reservation for the corresponding venue.
+            </summary>
+            <param name="venueId">The venue ID to find the right venue.</param>
+            <returns>Returns the reservations.</returns>
+        </member>
+        <member name="T:Flite.Reservations.Services.IReservationService">
+            <summary>
+            Reservation service.
+            </summary>
+        </member>
+        <member name="M:Flite.Reservations.Services.IReservationService.CreateAsync(Flite.BayManager.Models.ReservationNewDto)">
+            <summary>
+            Create reservations.
+            </summary>
+        </member>
+        <member name="M:Flite.Reservations.Services.IReservationService.DeleteAsync(System.String)">
+            <summary>
+            Delete reservations.
+            </summary>
+        </member>
+        <member name="M:Flite.Reservations.Services.IReservationService.GetAsync(System.String)">
+            <summary>
+            Get reservations.
+            </summary>
+        </member>
+        <member name="M:Flite.Reservations.Services.IReservationService.SaveAsync(Flite.BayManager.Models.ReservationNewDto)">
+            <summary>
+            Edit reservations.
+            </summary>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.FliteReservationsApiIFliteReservations">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.FliteReservationsApiIFliteReservations.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteReservationsApiIFliteReservations.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteReservationsApiIFliteReservations.GetReservationsAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.FliteReservationsApiIFliteReservations.Flite#Reservations#Api#IFliteReservations#GetReservationsAsync(System.String)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

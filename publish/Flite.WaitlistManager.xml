@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.WaitlistManager</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.WaitlistManager.Services.IWaitListService">
+            <summary>
+            Waitlist service.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.GetAllAsync">
+            <summary>
+            Get All Waitlist.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.GetAsync(System.String)">
+            <summary>
+            Get Waitlist.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.UpdateAsync(System.String,Flite.WaitlistManager.Models.Waitlist)">
+            <summary>
+            Update Waitlist.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.DeleteAsync(System.String)">
+            <summary>
+            Delete Waitlist.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.CreateAsync(Flite.WaitlistManager.Models.Waitlist)">
+            <summary>
+            Create Waitlist.
+            </summary>
+        </member>
+        <member name="M:Flite.WaitlistManager.Services.IWaitListService.GetPlayerListAsync">
+            <summary>
+            Get Player List.
+            </summary>
+        </member>
+    </members>
+</doc>

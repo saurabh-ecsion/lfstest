@@ -1,0 +1,26 @@
+{
+  "name": "Flite.Tests.Setup",
+  "displayName": "TEST: Flite setup recipe for UI tests",
+  "description": "Flite setup recipe for automated UI test execution",
+  "author": "Flite",
+  "website": "https://www.flitegolf.com/",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "test" ],
+  "tags": [ "test" ],
+  "steps": [
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "Flite.Platform.Cms.Web",
+          "name": "Flite.Setup"
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "UseCdn": false
+    }
+  ]
+}

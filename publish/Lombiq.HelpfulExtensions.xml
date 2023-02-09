@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lombiq.HelpfulExtensions</name>
+    </assembly>
+    <members>
+        <member name="M:Lombiq.HelpfulExtensions.Extensions.CodeGeneration.CodeGenerationDisplayDriver.GenerateCodeForPartsWithFields(System.Text.StringBuilder,System.Collections.Generic.IEnumerable{OrchardCore.ContentManagement.Metadata.Models.ContentTypePartDefinition})">
+            <summary>
+            Building those parts that have fields separately (fields can't be configured inline in types).
+            </summary>
+        </member>
+    </members>
+</doc>

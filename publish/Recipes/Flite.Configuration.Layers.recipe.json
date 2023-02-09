@@ -1,0 +1,35 @@
+{
+  "name": "Flite.Configuration.Layers",
+  "displayName": "Flite Layer configuration recipe",
+  "description": "Configure Layers for widgets.",
+  "author": "Flite",
+  "website": "https://www.flitegolf.com/",
+  "version": "1.0",
+  "issetuprecipe": false,
+  "categories": [ "default" ],
+  "tags": [ "default" ],
+  "steps": [
+    {
+      "name": "Layers",
+      "Layers": [
+        {
+          "Name": "Default",
+          "Rule": null,
+          "Description": null,
+          "LayerRule": {
+            "Conditions": [
+              {
+                "$type": "OrchardCore.Rules.Models.BooleanCondition, OrchardCore.Rules",
+                "Value": true,
+                "Name": "BooleanCondition",
+                "ConditionId": "4rpcp9pf7xdg8z9tvqg0cy0rdp"
+              }
+            ],
+            "Name": null,
+            "ConditionId": "496swa0y616bdv4sby1afbeswd"
+          }
+        }
+      ]
+    }
+  ]
+}

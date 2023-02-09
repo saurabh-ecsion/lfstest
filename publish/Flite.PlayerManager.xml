@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.PlayerManager</name>
+    </assembly>
+    <members>
+        <member name="M:Flite.PlayerManager.Controllers.Api.Extensions.DeserializeJson``1(System.String)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Controllers.Api.Extensions.DeserializeJson``1(System.String,Newtonsoft.Json.JsonSerializerSettings)">
+            <summary>
+                A string extension method that deserialize a Json string to object.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="this">The @this to act on.</param>
+            <param name="settings">The settings.</param>
+            <returns>The object deserialized.</returns>
+        </member>
+        <member name="T:Flite.PlayerManager.Services.IPlayerService">
+            <summary>
+            Interface containing Player related methods.
+            </summary>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.GetPlayersAsync(System.Int32)">
+            <summary>
+            Gets the list of all players.
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/>Containing all <see cref="T:Flite.BayManager.Models.Player"/>s.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.SearchPlayersAsync(Flite.PlayerManager.Models.PlayerSearch,System.Int32)">
+            <summary>
+            Search players.
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/>Containing all <see cref="T:Flite.BayManager.Models.Player"/>s.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.GetPlayerAsync(System.String)">
+            <summary>
+            Get player by player ID.
+            </summary>
+            <returns><see cref="T:Flite.BayManager.Models.Player"/> with the corresponding ID.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.EditPlayerAsync(Flite.BayManager.Models.Player)">
+            <summary>
+            Updates the <see cref="T:Flite.BayManager.Models.Player"/>'s data.
+            </summary>
+            <returns>If the edit was successful or not.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.GetVenuesAsync">
+            <summary>
+            Gets all the venues to list for the players page.
+            </summary>
+            <returns>Collection of venues.</returns>
+        </member>
+        <member name="M:Flite.PlayerManager.Services.IPlayerService.GetMembershipsAsync">
+            <summary>
+            Gets all the membership types.
+            </summary>
+            <returns>Collection of memberships.</returns>
+        </member>
+    </members>
+</doc>

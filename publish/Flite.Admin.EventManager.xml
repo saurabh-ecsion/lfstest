@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flite.Admin.EventManager</name>
+    </assembly>
+    <members>
+        <member name="T:Flite.Admin.EventManager.Services.IEventService">
+            <summary>
+            Event Manager service.
+            </summary>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.GetEventsAsync">
+            <summary>
+            Gets all Events.
+            </summary>
+            <returns>List of Events.</returns>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.CreateMonthlyEvents(System.Collections.Generic.IEnumerable{Flite.Admin.EventManager.Models.EventDto})">
+            <summary>
+            Creates a monthly list of events.
+            </summary>
+            <param name="events">List of events.</param>
+            <returns>List of sorted monthly events.</returns>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.CreateYearlyEventsAsync(System.Int32)">
+            <summary>
+            Creates a yearly list of events.
+            </summary>
+            <param name="year">Year to list.</param>
+            <returns>List of sorted yearly events.</returns>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.GetEventByIdAsync(System.String)">
+            <summary>
+             Gets a certain event by its id.
+            </summary>
+            <param name="eventId">Event's id to be found.</param>
+            <returns>A single event matching the parameter.</returns>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.CreateEventAsync(Flite.Admin.EventManager.Models.EventDto)">
+            <summary>
+            Creates an event using the model parameter.
+            </summary>
+            <param name="model">Event model to be created.</param>
+            <returns>A boolean value whether the creation was a success.</returns>
+        </member>
+        <member name="M:Flite.Admin.EventManager.Services.IEventService.UpdateEventAsync(Flite.Admin.EventManager.Models.EventDto)">
+            <summary>
+            Updates an event using the model parameter.
+            </summary>
+            <param name="model">Event model to be updated.</param>
+            <returns>A boolean value whether the update was a success.</returns>
+        </member>
+    </members>
+</doc>

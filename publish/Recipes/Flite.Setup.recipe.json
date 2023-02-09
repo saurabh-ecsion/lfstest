@@ -1,0 +1,185 @@
+{
+  "name": "Flite.Setup",
+  "displayName": "Flite default setup recipe",
+  "description": "Provides default configuration and enables all the Flite modules.",
+  "author": "Flite",
+  "website": "https://www.flitegolf.com/",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "default" ],
+  "tags": [ "default" ],
+  "steps": [
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "Flite.Platform.Cms.Web",
+          "name": "SaaS"
+        }
+      ]
+    },
+    {
+      "name": "feature",
+      "enable": [
+        "Flite.Authentication",
+        "Flite.BayManager",
+        "Flite.EventCentral",
+        "Flite.PaymentProcessor",
+        "Flite.PlayerManager",
+        "Flite.ProductManager",
+        "Flite.Reporting",
+        "Flite.Reservations",
+        "Flite.VenueSettings",
+        "Flite.Permissions",
+        "Flite.WaitlistManager",
+        "Flite.FliteUsersModule",
+        "Flite.Frontend",
+        "Flite.Landing",
+        "Flite.Libs",
+        "Flite.Admin.StaffManager",
+        "Flite.Admin.FacilitySetup",
+        "Flite.Admin.OperatingHours",
+        "Flite.Admin.PricingManager",
+        "Flite.Admin.PricingManager",
+        "Flite.Admin.Sms",
+        "Flite.Admin.EventManager",
+        "Lombiq.HelpfulExtensions.ContentTypes",
+        "Lombiq.HelpfulExtensions.Widgets",
+        "OrchardCore.AuditTrail",
+        "OrchardCore.Deployment",
+        "OrchardCore.Layers",
+        "OrchardCore.Localization",
+        "OrchardCore.HealthChecks",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.Users.AuditTrail",
+        "OrchardCore.Users.CustomUserSettings"
+      ],
+      "disable": [
+        "OrchardCore.HomeRoute"
+      ]
+    },
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "Flite.Platform.Cms.Web",
+          "name": "Flite.Configuration.Roles"
+        },
+        {
+          "executionid": "Flite.Platform.Cms.Web",
+          "name": "Flite.Configuration.Layers"
+        },
+        {
+          "executionid": "Flite.Platform.Cms.Web",
+          "name": "Flite.Configuration.AuditTrail"
+        }
+      ]
+    },
+    {
+      "name": "themes",
+      "admin": "TheAdmin",
+      "site": "Flite.Frontend"
+    },
+    {
+      "name": "settings",
+      // To make sure that e.g. numbers and dates are formatted the same way on all machines we have to specify the
+      // culture too.
+      "LocalizationSettings": {
+        "DefaultCulture": "en-US",
+        "SupportedCultures": [
+          "en-US"
+        ]
+      },
+      "LoginSettings": {
+        "UseSiteTheme": true,
+        "UseExternalProviderIfOnlyOneDefined": false,
+        "DisableLocalLogin": false,
+        "UseScriptToSyncRoles": false,
+        "SyncRolesScript": "/* Uncomment to map AzureAD\r\nswitch (context.loginProvider) {\r\n    case \"AzureAD\":\r\n        context.externalClaims.forEach(claim => {\r\n            if (claim.Type === \"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\") {\r\n                switch (claim.Value) {\r\n                    case \"Writer\":\r\n                        context.rolesToAdd.push(\"Author\");\r\n                        break;\r\n                    case \"Admin\":\r\n                        context.rolesToAdd.push(\"Administrator\");\r\n                        break;\r\n                    default:\r\n                        log(\"Warning\", \"Role \" + claim.Value + \" was not handled\");\r\n                        break;\r\n                }\r\n            }\r\n        });\r\n    default:\r\n        log(\"Warning\", \"Provider \" + loginProvider + \" was not handled\");\r\n        break;\r\n}\r\n*/\r\n"
+      },
+      "ApiAuthenticationPartSettings": {
+        "ApiUrl": "https://dev-flite-gateway.azurewebsites.net",
+        "ClientId": "bb686a66-1031-4d87-3eba-08d95e72bda1",
+        "ClientSecret": "hT1Bt59.d2iXj7R7pTQPRWOtKCMgxj5TI496MJoG7M6PEzigaly",
+        "VenueId": "9496ceac-0b79-402b-a2b9-cedca8853cd7"
+      },
+      "LayerSettings": {
+        "Zones": [
+          "Content",
+          "Header",
+          "Messages",
+          "Footer"
+        ]
+      }
+    },
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "FliteUserProfileData",
+          "DisplayName": "Flite User Profile Data",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Stereotype": "CustomUserSettings",
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FliteUserProfilePart",
+              "Name": "FliteUserProfilePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ContentParts": [
+        {
+          "Name": "FliteUserProfilePart",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "FirstName",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "First Name",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "LastName",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Last Name",
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "PinCode",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "PinCode",
+                  "Position": "2"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}

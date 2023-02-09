@@ -1,0 +1,105 @@
+{
+  "name": "Flite.Configuration.AuditTrail",
+  "displayName": "Flite Audit Trail configuration recipe",
+  "description": "Configure Audit Trail settings.",
+  "author": "Flite",
+  "website": "https://www.flitegolf.com/",
+  "version": "1.0",
+  "issetuprecipe": false,
+  "categories": [ "default" ],
+  "tags": [ "default" ],
+  "steps": [
+    {
+      "name": "Settings",
+      "AuditTrailSettings": {
+        "Categories": [
+          {
+            "Name": "Content",
+            "Events": [
+              {
+                "Name": "Created",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Saved",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Published",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Unpublished",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Removed",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Cloned",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Restored",
+                "Category": "Content",
+                "IsEnabled": true
+              }
+            ]
+          },
+          {
+            "Name": "User",
+            "Events": [
+              {
+                "Name": "LoggedIn",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LogInFailed",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LogInIsLockedOut",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Enabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Disabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Created",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Updated",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Deleted",
+                "Category": "User",
+                "IsEnabled": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lombiq.Tests.UI.AppExtensions</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Extensions.DependencyInjection.OrchardCoreBuilderExtensions.ConfigureUITesting(Microsoft.Extensions.DependencyInjection.OrchardCoreBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)">
+            <summary>
+            Sets up everything for UI testing in the app if it was started during a test.
+            </summary>
+            <param name="configuration">
+            The <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/> instance of the app where configuration options will be loaded from.
+            </param>
+            <param name="enableShortcutsDuringUITesting">
+            A value indicating whether to enable the Lombiq.Tests.UI.Shortcuts feature. If set to <see langword="true"/>
+            the feature will only be enabled if the web project references the Shortcuts module.
+            </param>
+        </member>
+    </members>
+</doc>
